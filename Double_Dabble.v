@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
 
 module binary_to_bcd(
-	input i_clk_1mhz, i_reset,
+	input i_clk, i_reset,
 	input [12:0] i_binary_data,	
 	output reg [15:0] o_bcd_data 
 );
@@ -28,7 +28,7 @@ module binary_to_bcd(
 			r_bcd4_value_cmp = 0;
 	end
 	
-	always @(posedge i_clk_1mhz) begin
+	always @(posedge i_clk) begin
 		if(i_reset) begin
 			r_binary_data <= 0;
 			r_conv_comp <= 0;
