@@ -1,5 +1,5 @@
 # Binary Number to BCD Converter
-Synthesizable Verilog code to convert a binary number into bcd.
+Synthesizable Verilog code to convert a binary number into bcd using the Double Dabble algorithm.
 ## I/O Description
 - i_clk: Input clock
 - i_reset: Reset input to reset the conversion process.
